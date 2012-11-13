@@ -4,6 +4,14 @@
 
 Soft Tabs: NO
 
+### Formatting
+
+```
+Functions:    camelCase
+Variables:    camelCase
+Constants:    ALL_CAPS
+```
+
 ### jQuery
 
 When you reuse jQuery object a lot then it's best to cache it in a variable.  
@@ -19,6 +27,8 @@ var $container = $('.container');
 $container.find('.click-here').click(function(e) { /* ... */ });
 $container.find('.some-form').submit(function(e) { /* ... */ });
 ```
+
+
 
 ### Coding Tips
 
