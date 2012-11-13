@@ -9,16 +9,16 @@ Soft Tabs: NO
 When you reuse jQuery object a lot then it's best to cache it in a variable.  
 Also prefix the variable with `$` to indicate that it is a jQuery object.
 
-    ```javascript
-    // BAD
-    $('.container .click-here').click(function(e) { /* ... */ });
-    $('.container .some-form').submit(function(e) { /* ... */ });
+```javascript
+// BAD
+$('.container .click-here').click(function(e) { /* ... */ });
+$('.container .some-form').submit(function(e) { /* ... */ });
 
-    // GOOD
-    var $container = $('.container');
-    $container.find('.click-here').click(function(e) { /* ... */ });
-    $container.find('.some-form').submit(function(e) { /* ... */ });
-    ```
+// GOOD
+var $container = $('.container');
+$container.find('.click-here').click(function(e) { /* ... */ });
+$container.find('.some-form').submit(function(e) { /* ... */ });
+```
 
 ### Coding Tips
 
