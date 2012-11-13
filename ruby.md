@@ -2,8 +2,10 @@
 
 ### Indentation
 
+```
 Soft Tabs:      YES
 Spaces per tab: 2
+````
 
 ### Formatting
 
