@@ -2,7 +2,9 @@
 
 ### Indentation
 
+```
 Soft Tabs: NO
+```
 
 ### Formatting
 
