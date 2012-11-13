@@ -18,6 +18,7 @@ Constants:    ALL_CAPS
 
 When you reuse jQuery object a lot then it's best to cache it in a variable.  
 Also prefix the variable with `$` to indicate that it is a jQuery object.
+The following example also shows the use of `find()` to prevent traversing the whole DOM tree multiple times.
 
 ```javascript
 // BAD
