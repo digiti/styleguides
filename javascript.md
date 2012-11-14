@@ -1,12 +1,6 @@
 [Back](https://github.com/digiti/styleguides)
 # JavaScript
 
-### Indentation
-
-```
-Soft Tabs: NO
-```
-
 ### Formatting
 
 ```
