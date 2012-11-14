@@ -102,7 +102,7 @@ cf:before,
 
 
 ## Names & capitalization
-Class names and ID's are written in **lowercase**, with **spaces separated by underscores** (__snake case__). HTML elements are also written in lowercase.
+Class names and ID's are written in **lowercase**, with **spaces separated by underscores** *(snake case)*. HTML elements are also written in lowercase.
 
 ```CSS
 body {
