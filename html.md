@@ -126,3 +126,75 @@ HTML5:
 ```
 <meta charset="utf-8" />
 ```
+
+
+## Pigeon
+
+Always define a DOCTYPE and UTF-8 character set!
+
+```HTML
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+```
+
+Use XHTML closing tags for every element (eg. `<img />`).
+
+Put CSS in the head tag, and avoid inline CSS as much as possible. Lay-out corrections are almost inevitable, and this makes it much easier to make adjustments later on.
+
+**WRONG:**
+```HTML
+<h1 style="font-family: Verdana; font-size: 18px;"><span class="title"></span></h1>
+```
+
+**RIGHT:**
+```HTML
+<head>
+<style type="text/css" media="all">
+	h1 {
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 18px;
+	}
+</style>
+</head>
+<body>
+	<h1><span class="title"></span></h1>
+</body>
+```
+
+When centering a page, use a table with `align="center"`, not a `<center>` tag.
+
+**WRONG:**
+```HTML
+<center>
+<table>
+</table>
+</center>
+```
+
+**RIGHT:**
+```HTML
+<table align="center">
+</table>
+```
+
+Set the dimensions of table cells as much as possible. This prevents awkward lay-out rendering.
+
+```HTML
+<td width="600" height="40"></td>
+```
+
+Avoid spacer GIF's or spaces (`&#160;`) for creating margins. If you set both the **width** and **height** of an empty table cell, it will create the correct space.
+
+**WRONG:**
+```HTML
+<td><img src="spacer.gif" width="600" height="20" /></td>
+<td>&#160;</td>
+```
+
+**RIGHT:**
+```HTML
+<td width="600" height="20"></td>
+```
