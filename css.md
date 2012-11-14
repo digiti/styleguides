@@ -1,13 +1,6 @@
 [Back](https://github.com/digiti/styleguides)
 # CSS
 
-## Editor configuration
-
-```
-Soft Tabs:      NO
-Spaces per tab: 4
-````
-
 ## File structure
 
 A CSS file follows the flow of the page (or pages) it applies to. It starts with general styles (eg. reset, body, @font-face,...), and continues with the header, content and footer (if there are any), in that order.
