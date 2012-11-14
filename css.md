@@ -7,7 +7,7 @@ A CSS file follows the flow of the page (or pages) it applies to. It starts with
 
 Third-party styles (eg. plugin styles), are placed in the bottom of the CSS file, unless they apply to a distinct part of the page.
 
-Each distinct part of the page is marked with a comment in caps, and is separated from other parts of the page with **2 spaces**.
+Each distinct part of the page is marked with a comment in caps, and is separated from other parts of the page with **2 line breaks**.
 
 ```CSS
 /** COMMON **/
