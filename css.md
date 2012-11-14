@@ -1,14 +1,14 @@
 [Back](https://github.com/digiti/styleguides)
 # CSS
 
-### Editor configuration
+## Editor configuration
 
 ```
 Soft Tabs:      NO
 Spaces per tab: 4
 ````
 
-### File structure
+## File structure
 
 A CSS file follows the flow of the page (or pages) it applies to. It starts with general styles (eg. reset, body,...), and continues with the header, content and footer (if there are any), in that order.
 
@@ -20,27 +20,32 @@ Each distinct part of the page is marked with a comment in caps, and is separate
 /** COMMON **/
 @import url('reset.css');
 
-body {}
+body {
+}
 
 
 /** HEADER **/
-#header {}
+#header {
+}
 
 
 /** CONTENT **/
-#content {}
+#content {
+}
 
 
 /** FOOTER **/
-#footer {}
+#footer {
+}
 
 
 /** PLUGIN **/
-.plugin {}
+.plugin {
+}
 ```
 
 
-### File organization
+## File organization
 
 Put all CSS styles in one file, except for reset.css and print.css.
 
@@ -67,7 +72,7 @@ users.css
 Don't divide the CSS in several files bases on lay-out properties (eg. typography.css, colors.css,...). Since CSS properties will be scattered among several files, it will makes it harder to perform updates in the future.
 
 
-### Documentation/commenting
+## Documentation/commenting
 
 Document every specific fix or hack in your file, so other developers now why specific properties were applied.
 
@@ -87,6 +92,21 @@ cf:before,
 /** Single-line comment **/
 .cf {
 	*zoom: 1;
+}
+```
+
+
+## Names & capitalization
+Class names and ID's are written in **lowercase**, with **spaces separated by underscores** (__snake case__). HTML elements are also written in lowercase.
+
+```CSS
+body {
+}
+
+.box_content {
+}
+
+#featured_content {
 }
 ```
 
@@ -168,3 +188,7 @@ Property values are written in shorthand where possible.
 	color: #333;
 	background: url('content.png') repeat-x 0 0;
 ```
+
+
+## CSS preprocessors
+Depending on the project, [SASS](http://sass-lang.com/) with **SCSS syntax** can be used. The same style conventions listed here should be used for SASS as well.
