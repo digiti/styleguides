@@ -91,9 +91,9 @@ cf:before,
 ```
 
 
-## Declarations
+## Rules
 
-Declarations use the following structure. This enables every developer to easily find specific properties.
+Related rules are grouped. This enables every developer to easily find specific properties.
 
 ```CSS
 #content {
@@ -102,7 +102,7 @@ Declarations use the following structure. This enables every developer to easily
 	position: relative;
 	display: block;
 	overflow: auto;
-	/** Margin/border/padding, combined on a single rule if possible **/
+	/** Margin/border/padding **/
 	margin: 0 0 40px 0;
 	margin-left: 20px;
 	border: 1px solid #333;
@@ -128,4 +128,43 @@ Declarations use the following structure. This enables every developer to easily
 	box-shadow: 5px 5px 5px #333;
 	border-radius: 4px;
 }
+```
+
+A rule starts with the selector (multiple selectors are divided among multiple lines), followed by a space, the opening curly brace on the same line, the properties, and ends with a curly brace on the beginning of a new line.
+
+```CSS
+.box h1,
+.box h1 a {
+	color: #333;
+}
+```
+
+Rules always stick to the left side of the CSS file, and **can not be indented**. They are grouped based on their containers. Rules are **separated by a single line**.
+
+```CSS
+.box {
+	width: 400px;
+}
+
+.box h1 {
+	font-size: 18px;
+}
+
+.box h1 a {
+	color: #333;
+}
+```
+
+Properties are indented with a single tab, followed by a colon, a space, the value of the property, and a closing semicolon.
+
+```CSS
+	color: #333;
+```
+
+Property values are written in shorthand where possible.
+
+```CSS
+	margin: 0 0 0 20px;
+	color: #333;
+	background: url('content.png') repeat-x 0 0;
 ```
