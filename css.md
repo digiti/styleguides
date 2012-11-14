@@ -93,7 +93,7 @@ cf:before,
 
 ## Rules
 
-Related rules are grouped. This enables every developer to easily find specific properties.
+Related rules are **grouped**, and always follow the same structure. This enables every developer to easily find specific properties.
 
 ```CSS
 #content {
@@ -130,7 +130,7 @@ Related rules are grouped. This enables every developer to easily find specific 
 }
 ```
 
-A rule starts with the selector (multiple selectors are divided among multiple lines), followed by a space, the opening curly brace on the same line, the properties, and ends with a curly brace on the beginning of a new line.
+A rule starts with the selector (multiple selectors are divided among multiple lines), followed by a space, the opening curly brace on the same line, the properties and values, and ends with a curly brace on the beginning of a new line.
 
 ```CSS
 .box h1,
