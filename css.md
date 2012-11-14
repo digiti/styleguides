@@ -10,7 +10,7 @@ Spaces per tab: 4
 
 ## File structure
 
-A CSS file follows the flow of the page (or pages) it applies to. It starts with general styles (eg. reset, body,...), and continues with the header, content and footer (if there are any), in that order.
+A CSS file follows the flow of the page (or pages) it applies to. It starts with general styles (eg. reset, body, @font-face,...), and continues with the header, content and footer (if there are any), in that order.
 
 Third-party styles (eg. plugin styles), are placed in the bottom of the CSS file, unless they apply to a distinct part of the page.
 
@@ -19,6 +19,11 @@ Each distinct part of the page is marked with a comment in caps, and is separate
 ```CSS
 /** COMMON **/
 @import url('reset.css');
+
+@font-face {
+	font-family: Gotham;
+	src: url('Gotham.otf');
+} 
 
 body {
 }
