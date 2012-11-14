@@ -44,22 +44,88 @@ body {}
 
 Put all CSS styles in one file, except for reset.css and print.css.
 
+Give the CSS file a logical name (eg. the name of a page or controller).
+
 ```
 ..
 main.css
-reset.css
 print.css
+reset.css
 ```
 
 CSS styles must be divided in several files if this helps make the structure more clear. An application or larger website will likely have a CSS file for every page.
 
 ```
 ..
-reset.css
-common.css
-users.css
-todos.css
+application.css
 entries.css
+reset.css
+todos.css
+users.css
 ```
 
-Don't divide the CSS in several files bases on lay-out properties (eg. typography.css, colors.css,...). Since CSS properties will be scattered among several files, this makes it harder to perform updates in the future.
+Don't divide the CSS in several files bases on lay-out properties (eg. typography.css, colors.css,...). Since CSS properties will be scattered among several files, it will makes it harder to perform updates in the future.
+
+
+### Documentation/commenting
+
+Document every specific fix or hack in your file, so other developers now why specific properties were applied.
+
+But don't overdo it. There's no need to explain every property.
+
+```CSS
+/**
+ * Multi-line comment
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+cf:before,
+.cf:after {
+  content: ' ';
+	display: table;
+}
+
+/** Single-line comment **/
+.cf {
+	*zoom: 1;
+}
+```
+
+
+## Declarations
+
+Declarations use the following structure. This enables every developer to easily find specific properties.
+
+```CSS
+#content {
+	/** Everything that is related to positioning **/
+	float: left;
+	position: relative;
+	display: block;
+	overflow: auto;
+	/** Margin/border/padding, combined on a single rule if possible **/
+	margin: 0 0 40px 0;
+	margin-left: 20px;
+	border: 1px solid #333;
+	padding: 20px 10px;
+	/** Width/height, min-width/min-height, combined on a single rule if possible **/
+	width: 400px; height: 300px;
+	min-width: 400px; min-height: 300px;
+	/** Typography **/
+	font-family: Verdana, Helvetica, 'Trebuchet MS', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline;
+	/** Colors/backgrounds **/
+	color: #333;
+	background: url('content.png') no-repeat 0 0;
+	/** Transforms/transitions **/
+	transform: rotate(20deg);
+	transition: height 1s;
+	/** Box styles **/
+	box-shadow: 5px 5px 5px #333;
+	border-radius: 4px;
+}
+```
