@@ -189,6 +189,17 @@ Property values are written in shorthand where possible.
 
 If the value of the width or height is 0, do not specify units.
 
+**WRONG:**
+```CSS
+	margin: 0px 0px 10px 0px;
+```
+
+**RIGHT:**
+```CSS
+	margin: 0 0 10px 0;
+```
+
+
 ## CSS preprocessors
 Depending on the project, [SASS](http://sass-lang.com/) with **SCSS syntax** can be used. The same style conventions listed here should be used for SASS as well.
 
