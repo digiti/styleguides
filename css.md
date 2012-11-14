@@ -187,6 +187,10 @@ Property values are written in shorthand where possible.
 	background: url('content.png') repeat-x 0 0;
 ```
 
+If the value of the width or height is 0, do not specify units.
 
 ## CSS preprocessors
 Depending on the project, [SASS](http://sass-lang.com/) with **SCSS syntax** can be used. The same style conventions listed here should be used for SASS as well.
+
+## Pixels vs. Ems
+Use px for font-size, because it offers absolute control over text. Additionally, unit-less line-height is preferred because it does not inherit a percentage value of its parent element, but instead is based on a multiplier of the font-size.
