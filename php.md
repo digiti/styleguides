@@ -181,13 +181,15 @@ MY_CONSTANT = 'test';
 
 ## Arrays
 
-When defining arrays, they must be properly indented, and have a single space between the key, equals sign and value. Values are aligned using spaces.
+When defining arrays, they must be properly indented, and have a single space between the key, equals sign and value. 
+Values are aligned using spaces.  
+Always but a comma a the end so that new values can be easily added through copy paste.
 
 ```PHP
 $users = array(
 	1 => 'Bert',
 	2 => 'Maarten',
-	3 => 'Bert'
+	3 => 'Bert',
 );
 ```
 
