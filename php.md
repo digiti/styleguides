@@ -105,7 +105,7 @@ function getUsers ()
 ```
 
 
-## Variable names
+## Variables
 
 Variable names are written in lowercase, use underscores for spaces ( _snake case_ ) and **[correctly describe their meaning](http://37signals.com/svn/posts/3250-clarity-over-brevity-in-variable-and-method-names)**. Do **not** use [Hungarian notation](http://en.wikipedia.org/wiki/Hungarian_notation).
 
@@ -182,8 +182,9 @@ MY_CONSTANT = 'test';
 ## Arrays
 
 When defining arrays, they must be properly indented, and have a single space between the key, equals sign and value. 
-Values are aligned using spaces.  
-Always add a comma at the end so that new values can be easily added through copy paste.
+Values are aligned using spaces.
+
+Always add a comma at the end so that new values can be easily added through copy/paste.
 
 ```PHP
 $users = array(
