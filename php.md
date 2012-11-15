@@ -47,12 +47,12 @@ while ($row = mysql_fetch_assoc($row)) {
 
 Write a single statement per line.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 $foo = 'bar'; $bar = 1;
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 $foo = 'bar';
 $bar = 1;
@@ -73,7 +73,7 @@ $foo = "Let's not unnecessarily escape single quotes";
 
 Document your code with comments as much as possible, but don't be verbose. Use single or multiline comments where appropriate.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 // Checks if the form was posted
 $form_was_posted = true;
@@ -87,7 +87,7 @@ function isFormPosted ()
 }
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 // Holds a unique hash for identifying the template
 $template_hash = 'qs54kio4kds';
@@ -111,7 +111,7 @@ Variable names are written in lowercase, use underscores for spaces ( _snake cas
 
 Variable declarations are followed by a space, an equals sign, a space, the variable value and a semicolon.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 $FOO = 'bar';
 $txtTitle = 'My title';
@@ -120,7 +120,7 @@ $foo=bar
 $thisIsAnotherVariable = 'test';
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 $foo = 'bar';
 $foo = true;
@@ -165,14 +165,14 @@ function getUsers ($foo = 'test', $bar = true)
 
 Constants are written in uppercase, with underscores for spaces. Constant names describe their meaning like variables.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 myConstant = 'test';
 $MYCONSTANT = 'test';
 $MY_CONSTANT = 'test';
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 USER = 'Bert';
 MY_CONSTANT = 'test';
@@ -205,7 +205,7 @@ The use of &&, || and != is preferred over AND, OR and NOT.
 
 Use === and !== when comparing or expecting boolean values.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 if($test=='test') {
 	
@@ -230,7 +230,7 @@ else {
 }
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 if ($test == 'test') {
 	
@@ -305,7 +305,7 @@ $first_name = mysql_real_escape_string($_POST['first_name']);
 
 Use a **plural** table name in lowercase, with underscores for spaces. The table name describes it's content as descriptive as possible.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 user
 USER
@@ -313,7 +313,7 @@ User
 usersTable
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 users
 registrations
@@ -321,7 +321,7 @@ registrations
 
 The name of an associative table (a table which contains the foreign keys of two tables) is a combination of the name of the first and second table name, in alphabetical order. The name of the foreign keys is their **singular** respective table name, followed by **_id** (eg. user_id, project_id).
 
-**Wrong:**
+**WRONG:**
 ```PHP
 projecttags
 project_tags
@@ -329,7 +329,7 @@ tagsprojects
 tags_projects
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 projects_tags
 ```
@@ -338,14 +338,14 @@ projects_tags
 
 Database fields are written in lowercase, and use underscores for spaces ( _snake case_ ).
 
-**Wrong:**
+**WRONG:**
 ```PHP
 ID
 firstname
 firstName
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 id
 first_name
@@ -355,7 +355,7 @@ Always use **utf8_general_ci** as the character set for database fields, unless 
 
 The order of the database fields is determined by their importance. Primary and foreign keys come first, followed by an optional hash, the other fields, and an optional created date and updated date come last.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 title
 created_on
@@ -365,7 +365,7 @@ project_id
 id
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 id
 project_id
@@ -390,7 +390,7 @@ mysql_set_charset('utf8', $db_handle);
 
 Use **shorthand** when PHP is embedded in an HTML page. This greatly improves readability.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 <?php if ($user_id == 4) { ?>
 <h1>Hello Bert!</h1>
@@ -403,7 +403,7 @@ Use **shorthand** when PHP is embedded in an HTML page. This greatly improves re
 <?php } ?>
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 <?php if ($user_id == 4): ?>
 <h1>Hello Bert!</h1>
@@ -418,7 +418,7 @@ Use **shorthand** when PHP is embedded in an HTML page. This greatly improves re
 
 Avoid the nesting of HTML in PHP as much as possible.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 <?php
 
@@ -439,7 +439,7 @@ foreach ($users as $user) {
 ?>
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 <?php if ($user_id == 4): ?>
 <h1>Hello Bert!</h1>
@@ -454,12 +454,12 @@ foreach ($users as $user) {
 
 The usage of **short open tags** is never allowed.
 
-**Wrong:**
+**WRONG:**
 ```PHP
 <? echo $test; ?>
 ```
 
-**Right:**
+**RIGHT:**
 ```PHP
 <?php echo $test; ?>
 ```
