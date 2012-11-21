@@ -41,3 +41,18 @@ my_title = 'My title'
 ```
 
 
+## Functions
+snake_case
+
+
+## Properties
+snake_case
+
+
+## Classes
+CamelCase
+
+
+## Constants
+
+ALL_CAPS
