@@ -1,6 +1,8 @@
 [Back](https://github.com/digiti/styleguides)
 # Ruby
 
+Follow the [official ruby style guide].
+
 ##Line length
 **Try to keep lines of code to a maximum of 80-100 characters in width, but split them up where it makes sense.**  
 
