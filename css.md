@@ -203,6 +203,33 @@ If the value of the width or height is 0, do not specify units.
 ## CSS preprocessors
 Depending on the project, [SASS](http://sass-lang.com/) with **SCSS syntax** can be used. The same style conventions listed here should be used for SASS as well.
 
+Order for listing SASS/SCSS:
+1. @extend(s)
+2. regular styles
+3. @include(s)
+4. nested selectors
+
+```CSS
+.weather {
+  @extends %module; 
+  background: LightCyan;
+  @include transition(all 0.3s ease);
+  > h3 {
+    border-bottom: 1px solid white;
+    @include transform(rotate(90deg));
+  }
+}
+```
+
+A few basic rules to keep in mind when writing SASS/SCSS:
+* all vendor prefixes use @mixins
+* maximum nesting: three levels deep
+* partials are named _partial.scss
+* locally, compile expanded with line mapping
+* in deployment, compile compressed
+* variablize all common numbers, and numbers with meaning
+* variablize all colors
+
 ## Pixels vs. Ems
 Use px for font-size, because it offers absolute control over text. 
 Additionally, unit-less line-height is preferred because it does not inherit a percentage value of its parent element, 
