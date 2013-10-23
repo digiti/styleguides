@@ -18,7 +18,7 @@ Checkin and/or publish the files you're working on **on a daily basis** or when 
 If you don't do this, one of the following will happen:
 * Your colleague (or the client/business) is confused when they don't see the changes you've made.
 * Other people can't make changes to the files you've checked out to you.
-* A kitten wil die every hour until your files are checked in or published!
+* A kitten wil die every hour until your files are checked in or published! :cat2: :gun:
 
 Checked Out: You're making changes to this file, so nobody else can access it.
 Checked In: The changes you've made will be visible the people with the same rights as you have.
