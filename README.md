@@ -6,6 +6,7 @@
 * [HTML](https://github.com/digiti/styleguides/blob/master/html.md)
 * [CSS](https://github.com/digiti/styleguides/blob/master/css.md)
 * [Objective-C](https://github.com/digiti/styleguides/blob/master/objective-c.md)
+* [SharePoint](https://github.com/digiti/styleguides/blob/master/sharepoint.md)
 
 
 ## Editor configuration
