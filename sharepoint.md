@@ -20,9 +20,9 @@ If you don't do this, one of the following will happen:
 * Other people can't make changes to the files you've checked out to you.
 * A kitten wil die every hour until your files are checked in or published! :cat2: :gun:
 
-Checked Out: You're making changes to this file, so nobody else can access it.
-Checked In: The changes you've made will be visible the people with the same rights as you have.
-Publish: The changes you've made will be visible for everyone!
+*Checked Out*: You're making changes to this file, so nobody else can access it.  
+*Checked In*: The changes you've made will be visible the people with the same rights as you have.  
+*Publish*: The changes you've made will be visible for everyone!
 
 ### Subsite templates
 Make sure at the beginning of a project that only "Publishing Site" & "Blog" templates are available. **Do not use** subsite templates with a workflow. If a new environment is set up using a workflow you can easily remove them from the appropriate libraries (Page library, Master Page gallery, Style Library, ...).
