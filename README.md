@@ -40,6 +40,9 @@ Spaces per tab: Personal preference
 ````
 
 ### Ruby
+
+Follow the conventions set by the Ruby and Ruby on Rails community.
+
 ```
 Soft tabs:      YES
 Spaces per tab: 2
@@ -57,13 +60,16 @@ Soft tabs:      NO
 Spaces per tab: Personal preference
 ````
 
-### CSS
+### CSS / SASS
 ```
 Soft tabs:      NO
 Spaces per tab: Personal preference
 ````
 
 ### Objective-C
+
+In general: Try to use Xcode defaults as much as possible.
+
 ```
 Soft tabs:      YES
 Spaces per tab: 4
