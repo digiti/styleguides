@@ -11,11 +11,27 @@
 
 ## Editor configuration
 
+
+
 ### General
 ```
 Line breaks:    Unix
 File encoding:  UTF-8
 ```
+
+### A note on tabs
+
+*Soft tabs* are made up of spaces.  
+*Hard tabs* are made up of a tab character.
+
+There's an eternal discussion going on about which is better, e.g.:
+
+* [Tabs versus Spaces](http://www.jwz.org/doc/tabs-vs-spaces.html)
+* [Never use hard tabs](http://opensourcehacker.com/2012/05/13/never-use-hard-tabs/)
+* [Tabs are evil](http://www.emacswiki.org/emacs/TabsAreEvil)
+
+Above all consistency is important,  
+so below are the standards which we've agreed upon per language.
 
 ### JavaScript
 ```
