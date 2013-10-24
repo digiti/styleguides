@@ -74,3 +74,9 @@ In general: Try to use Xcode defaults as much as possible.
 Soft tabs:      YES
 Spaces per tab: 4
 ````
+
+## Trailing whitespace
+
+If possible, set your editor to automatically strip trailing whitespace.
+
+[Why is trailing whitespace a big deal?](http://programmers.stackexchange.com/questions/121555/why-is-trailing-whitespace-a-big-deal)
