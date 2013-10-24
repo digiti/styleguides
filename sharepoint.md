@@ -45,7 +45,7 @@ In order to set up the out-of-the-box search functionality, we need to have "Sit
 
 ### Archives
 Archive pages will be set up using a default SharePoint view, unless specifically requested not to do so. 
-Update the existing "Archive" view (or create one if not available by default) & group the elements per year. In order to do so you first need to create a calculated field with the follwing formula ```=YEAR([PublishedDate])```. If the archive page will not contain much items over time or there is no date field defined, then you can leave the year field out of consideration. 
+Update the existing "Archive" view (or create one if not available by default) & group the elements per year. In order to do so you first need to create a calculated field with the follwing formula ```=TEXT(YEAR(Published),"000")```. If the archive page will not contain much items over time or there is no date field defined, then you can leave the year field out of consideration. 
 
 ### Cross Browser
 Always make sure your project looks fine using the following browsers:
