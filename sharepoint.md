@@ -40,6 +40,8 @@ All Javascript files need to be included in the masterpage or page layout files.
 
 The [SharePoint Services plugin](http://spservices.codeplex.com/) is a great library to communicate with the SharePoint Web Services via the SOAP protocol. Always make sure you have the right version in combination with the jQuery library. You can find more info on the project's homepage.
 
+In case you are having issues with dragging & dropping webparts in a page layout, it's commonly caused by a position:relative on a parent wrapper. There is [an easy & quick fix](http://neilmosafi.blogspot.be/2007/11/sharepoint-dragging-webparts-causes.html) for that. You can just add the JS function to the portal's custom JS file.
+
 ### Search
 In order to set up the out-of-the-box search functionality, we need to have "Site Collection Administrator Rights". When we have those rights we can configure the default search page & create a new "This Site" scope. **Do not mimic the search form**, unless you need to make a search results page per subsite.
 
