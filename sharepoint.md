@@ -49,6 +49,9 @@ In order to set up the out-of-the-box search functionality, we need to have "Sit
 Archive pages will be set up using a default SharePoint view, unless specifically requested not to do so. 
 Update the existing "Archive" view (or create one if not available by default) & group the elements per year. In order to do so you first need to create a calculated field with the follwing formula ```=TEXT(YEAR(Published),"000")```. If the archive page will not contain much items over time or there is no date field defined, then you can leave the year field out of consideration. 
 
+### Files
+When setting up a new portal use the following guides: Seperate words in a filename with dash. end the filename with versioning so when a second or third version of the portal will be made it's more clear wich version is the last. cfr: portal-1.0.js
+
 ### Cross Browser
 Always make sure your project looks fine using the following browsers:
 * IE 6 (only after specific request at the beginning of the project or during UAT)
